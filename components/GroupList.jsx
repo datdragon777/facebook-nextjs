@@ -23,7 +23,7 @@ const GroupList = ({ buttonStyles, imgStyles }) => {
         return (
           <ImageLinkButton
             key={index}
-            buttonStyles={buttonStyles}
+            imgButtonStyles={buttonStyles}
             imgStyles={imgStyles}
             photo={group.image}
             nameBtn={group.name}

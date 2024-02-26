@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 
 import FriendZone from '@/components/FriendZone';
 import Sidebar from '@/components/Sidebar';
+import PostCreationButton from '@/components/PostCreationButton';
 
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(0);
@@ -26,71 +27,10 @@ export default function Home() {
       <div className={mainContentClass}>
         <Sidebar />
         <main className=' flex justify-between lg:pl-96'>
-          <div className='w-full pt-6'>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
-            <p>svsabsbs</p>
+          <div className='w-full pt-6 flex justify-center'>
+            <div className='w-full sm:max-w-[680px]'>
+              <PostCreationButton avatarAccount='/avatar.jpg' />
+            </div>
           </div>
           <FriendZone />
         </main>

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Button } from './ui/button';
 
 const ImageLinkButton = ({
-  buttonStyles,
+  imgButtonStyles,
   imgStyles,
   photo,
   nameBtn,
@@ -11,7 +11,7 @@ const ImageLinkButton = ({
 }) => {
   return (
     <Link className='flex items-center w-full' href={imgLink}>
-      <Button className={buttonStyles}>
+      <Button className={imgButtonStyles}>
         <Image
           src={photo}
           width={36}

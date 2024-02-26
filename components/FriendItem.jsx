@@ -16,7 +16,9 @@ const FriendItem = ({ avatarFriend, avatarName, isOnline }) => {
           <div className='w-3 h-3 bg-green-500 rounded-full border-2 border-solid border-slate-50 absolute bottom-[-3px] right-0'></div>
         )}
       </div>
-      <span className='truncate w-9/12 text-left'>{avatarName}</span>
+      <span className='whitespace-normal truncate w-9/12 text-left'>
+        {avatarName}
+      </span>
     </Button>
   );
 };

@@ -41,7 +41,7 @@ const SidebarNavList = ({
   return (
     <div className={containerStyles}>
       <ImageLinkButton
-        buttonStyles={buttonStyles}
+        imgButtonStyles={buttonStyles}
         imgStyles={avatarStyles}
         photo={avatarImage}
         nameBtn={nameUser}
@@ -51,11 +51,11 @@ const SidebarNavList = ({
         return (
           <IconLinkButton
             key={index}
-            buttonAvatarStyles={buttonStyles}
+            linkButtonStyles={buttonStyles}
             iconImage={navItem.icon}
             iconName={navItem.name}
             iconPath={navItem.path}
-            iconStyle={avatarStyles}
+            iconStyles={`${avatarStyles}`}
           />
         );
       })}
